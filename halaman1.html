@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alat Tulis</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" href="asset/Buku 2.png" as="image" />
+  <link rel="preload" href="asset/Kertas 4.png" as="image" />
+  <link rel="preload" href="asset/Penggaris 2.png" as="image" />
+  <link rel="preload" href="asset/Pensil 5.png" as="image" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <!-- <div class="logo">MyLogo</div> -->
+    <div class="logo">Tugas Spin</div>
+    <button class="toggle-button" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a onclick="navigateTo('halaman1.html')">Alat Tulis</a></li>
+        <li><a onclick="navigateTo('halaman2.html')">Hewan</a></li>
+        <li><a onclick="navigateTo('halaman3.html')">Penampilan</a></li>
+        <li><a onclick="navigateTo('halaman4.html')">Makanan & Minuman</a></li>
+    </ul>
+</nav>
+  <div class="container">
+    <div class="wheel-container">
+      <canvas id="wheel"></canvas>
+    </div>
+    <div class="form-container">
+      <h2>Isi dari Roda</h2>
+      <form id="wheelForm">
+        <select id="selectname">
+          <option value="Buku">本</option>
+          <option value="Pensil">支</option>
+          <option value="Kertas">张</option>
+          <option value="Penggaris">把</option>
+        </select>
+        <select id="selectnumber">
+          <option value="1">一</option>
+          <option value="2">二</option>
+          <option value="3">三</option>
+          <option value="4">四</option>
+          <option value="5">五</option>
+        </select>
+        <button type="button" id="submitButton">Submit</button>
+      </form>
+    </div>
+  </div>
+  <script src="halaman1.js"></script>
+  <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>

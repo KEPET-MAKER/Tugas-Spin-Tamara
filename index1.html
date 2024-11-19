@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customizable Wheel</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preload" href="asset/Susu 1.png" as="image" />
+  <link rel="preload" href="asset/Apel 1.png" as="image" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="wheel-container">
+      <canvas id="wheel"></canvas>
+    </div>
+    <div class="form-container">
+      <h2>Isi dari Roda</h2>
+      <form id="wheelForm">
+        <select id="selectname">
+          <option value="Susu">Susu</option>
+          <option value="Aple">Apel</option>
+          <option value="Eskrim">Eskrim</option>
+          <option value="Jeruk">Jeruk</option>
+        </select>
+        <select id="selectnumber">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        <button type="button" id="submitButton">Submit</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
