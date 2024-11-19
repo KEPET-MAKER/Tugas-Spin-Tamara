@@ -167,7 +167,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
     if (!isSpin && names[winnerIndex]?.trim() == selectname.options[selectname.selectedIndex].value + " " + selectnumber.options[selectnumber.selectedIndex].value) {
       Swal.fire({
   title: 'Benar',
-  text: ' ' + selectnumber.options[selectnumber.selectedIndex].text + ' ' + selectname.options[selectname.selectedIndex].text + ' ' + keterangan[winnerIndex] + ' ' +,
+  text: ' ' + selectnumber.options[selectnumber.selectedIndex].text + ' ' + selectname.options[selectname.selectedIndex].text + ' ' + keterangan[winnerIndex],
   icon: 'success'
 });
       Swal.fire({
