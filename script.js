@@ -165,11 +165,14 @@ function determineWinner() {
 document.getElementById("submitButton").addEventListener("click", () => {
   if (winnerIndex != null && !isSpin) {
     if (!isSpin && names[winnerIndex]?.trim() == selectname.options[selectname.selectedIndex].value + " " + selectnumber.options[selectnumber.selectedIndex].value) {
-      alert(selectnumber.options[selectnumber.selectedIndex].text + " " + selectname.options[selectname.selectedIndex].text + " " + keterangan[winnerIndex]);
-    } else {
       Swal.fire({
-  title: "salah",
-  text: "Salah",
+  title: 'Benar',
+  text: ' ' + selectnumber.options[selectnumber.selectedIndex].text + ' ' + selectname.options[selectname.selectedIndex].text + ' ' + keterangan[winnerIndex] + ' ' +,
+  icon: 'success'
+});
+      Swal.fire({
+  title: "Salah!!!",
+  text: "Tolong Isi Jawaban Dengan Benar",
   icon: "error"
 });
     }
