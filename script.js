@@ -243,4 +243,7 @@ function Warning() {
     var myAudio = document.getElementById("spin");  
     myAudio.volume = 0.7; 
   }
-  
+  function Cina(){
+    var myAudio = document.getElementById("cina");
+    myAudio.volume = 0.1;
+  }
