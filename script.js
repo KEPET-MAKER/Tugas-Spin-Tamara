@@ -237,10 +237,10 @@ function Warning() {
   }
   function Alert() {
     var myAudio = document.getElementById("salah","benar");  
-    myAudio.volume = 0.8; 
+    myAudio.volume = 0.5; 
   }
   function Spin() {
     var myAudio = document.getElementById("spin");  
-    myAudio.volume = 1; 
+    myAudio.volume = 0.7; 
   }
   
