@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Makanan & Minuman</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" href="asset/Kopi 4.png" as="image" />
+  <link rel="preload" href="asset/Mie 1.png" as="image" />
+  <link rel="preload" href="asset/Kola 5.png" as="image" />
+  <link rel="preload" href="asset/Nasi 2.png" as="image" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <!-- <div class="logo">MyLogo</div> -->
+        <div class="logo">Tugas Spin</div>
+    <button class="toggle-button" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links" id="nav-links">
+        <li><a onclick="navigateTo('halaman1.html')">Alat Tulis</a></li>
+        <li><a onclick="navigateTo('halaman2.html')">Hewan</a></li>
+        <li><a onclick="navigateTo('halaman3.html')">Penampilan</a></li>
+        <li><a onclick="navigateTo('halaman4.html')">Makanan & Minuman</a></li>
+    </ul>
+</nav>
+  <div class="container">
+    <div class="wheel-container">
+      <canvas id="wheel"></canvas>
+    </div>
+    <div class="form-container">
+      <h2>Isi Jawaban</h2>
+      <form id="wheelForm">
+        <select id="selectname">
+          <option value="Kopi">杯</option>
+          <option value="Mie">碗</option>
+          <option value="Kola">瓶</option>
+          <option value="Nasi">盘</option>
+        </select>
+        <select id="selectnumber">
+          <option value="1">一</option>
+          <option value="2">二</option>
+          <option value="3">三</option>
+          <option value="4">四</option>
+          <option value="5">五</option>
+        </select>
+        <button type="button" id="submitButton">Submit</button>
+      </form>
+    </div>
+  </div>
+  <script src="halaman4.js"></script>
+  <audio controls="controls" id="benar" src="benar .mp3" type="audio/mp3" onloadeddata="Alert()"></audio>
+<audio controls="controls" id="salah" src="tetot.mp3" type="audio/mp3" onloadeddata="Alert()"></audio>
+<audio controls="controls" id="spin" src="spin_2.mp3" type="audio/mp3" onloadeddata="Spin()"></audio>  
+<audio controls="controls" id="warning" src="Warning.mp3" type="audio/mp3" onloadeddata="Warning()"></audio>
+  <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>
