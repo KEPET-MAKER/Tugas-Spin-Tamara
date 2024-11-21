@@ -86,7 +86,6 @@ function drawSphere() {
 }
 
 function drawSpinButton() {
-  spin.play();
   ctx.save();
   ctx.beginPath();
   ctx.arc(canvas.width / 2, canvas.height / 2, 40, 0, 2 * Math.PI);
@@ -139,7 +138,7 @@ function drawArrow() {
 
 function rotateWheel() {
   startAngle += (spinAngle * Math.PI) / 180;
-
+spin.play();
   // Fungsi dramatisasi: perlambatan lebih cepat di awal, kemudian lebih lambat
   spinAngle *= 0.98 + (Math.random() * 0.02); // Variasi perlambatan yang lebih dramatis
 
