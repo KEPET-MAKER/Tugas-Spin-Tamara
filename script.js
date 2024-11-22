@@ -62,7 +62,7 @@ function drawWheel() {
     ctx.translate(canvas.width / 2, canvas.height / 2);
     ctx.rotate(angle + arc / 2);
 
-    ctx.drawImage(img, radius - 104, -70, 95, 95);
+    ctx.drawImage(img, radius - 104, -70, 93, 93);
 
     // Tampilkan keterangan gambar
     ctx.textAlign = "center";
