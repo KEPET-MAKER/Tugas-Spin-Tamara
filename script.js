@@ -117,7 +117,7 @@ canvas.addEventListener("click", (event) => {
   // Jika klik dalam radius tombol, mulai putaran
   if (distance <= 50) {
     if (!isSpin) {
-      spinAngle = Math.random() * 100 + 100; // Kecepatan putaran
+      spinAngle = Math.random() * 50 + 50; // Kecepatan putaran
       isSpin = true;
       rotateWheel();
     }
@@ -140,7 +140,7 @@ function rotateWheel() {
   startAngle += (spinAngle * Math.PI) / 180;
 spin.play();
   // Fungsi dramatisasi: perlambatan lebih cepat di awal, kemudian lebih lambat
-  spinAngle *= 0.98 + (Math.random() * 0.02); // Variasi perlambatan yang lebih dramatis
+  spinAngle *= 0.70 + (Math.random() * 0.02); // Variasi perlambatan yang lebih dramatis
 
   drawWheel();
   
