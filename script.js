@@ -117,7 +117,7 @@ canvas.addEventListener("click", (event) => {
   // Jika klik dalam radius tombol, mulai putaran
   if (distance <= 50) {
     if (!isSpin) {
-      spinAngle = Math.random() * 1000 + 200; // Kecepatan putaran
+      spinAngle = Math.random() * 500 + 200; // Kecepatan putaran
       isSpin = true;
       rotateWheel();
     }
