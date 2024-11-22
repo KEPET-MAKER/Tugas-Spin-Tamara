@@ -140,7 +140,7 @@ function rotateWheel() {
   startAngle += (spinAngle * Math.PI) / 180;
 spin.play();
   // Fungsi dramatisasi: perlambatan lebih cepat di awal, kemudian lebih lambat
-  spinAngle *= 0.70 + (Math.random() * 0.02); // Variasi perlambatan yang lebih dramatis
+  spinAngle *= 0.90 + (Math.random() * 0.02); // Variasi perlambatan yang lebih dramatis
 
   drawWheel();
   
