@@ -51,6 +51,13 @@
   cina.play();
 
 });
+       document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                cina.pause(); // Pause the audio if the tab is hidden
+            } else {
+                cina.play(); // Resume the audio if the tab is visible again
+            }
+        });
  </script>
     <script src="index.js"></script>
 </body>
