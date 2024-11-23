@@ -173,14 +173,22 @@ document.getElementById("submitButton").addEventListener("click", () => {
       Swal.fire({
   title: 'Benar',
   text: ' ' + selectnumber.options[selectnumber.selectedIndex].text + ' ' + selectname.options[selectname.selectedIndex].text + ' ' + keterangan[winnerIndex],
-  icon: 'success'
+  icon: 'success',
+  confirmButtonText:"ok",
+}).then(()=>{
+  benar.pause();
+  benar.currentTime = 0;
 });
     } else {
       salah.play();
       Swal.fire({
   title: 'salah',
   text: 'Tolong isi jawaban dengan benar',
-  icon: 'error'
+  icon: 'error',
+  confirmButtonText:"ok",
+}).then(()=>{
+  salah.pause();
+  salah.currentTime = 0;
 });
     }
   } else if(!isSpin){
